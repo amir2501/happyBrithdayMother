@@ -1,0 +1,94 @@
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  animation: heartbeat 1.5s infinite;
+  margin: 0 auto;
+  display: block;
+  margin-top: 3rem;
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #ff0000;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+.happy {
+  font-family: "Dancing Script", cursive;
+  font-size: 30vh;
+  color: aliceblue;
+}
+.happy2 {
+  font-family: "Pacifico", cursive;
+  font-size: 10rem;
+  color: antiquewhite;
+}
+.opacty {
+  color: #ffcf9d;
+  opacity: 90%;
+}
+.font3 {
+  font-family: "Fjalla One", sans-serif;
+}
+.font4 {
+  font-family: "Caveat", cursive;
+}
+.white-text {
+  color: white;
+}
+@media (max-width: 780px) {
+  .happy {
+    font-size: 2em;
+    padding: 20px;
+  }
+}
